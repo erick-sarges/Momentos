@@ -147,14 +147,14 @@ body {
 
     .card-back,
     .card-front {
-
+        
         width: 96%;
         height: 96%;
         position: absolute;
         display: flex;
         justify-content: center;
         align-items: center;
-        border-radius: 20px;
+        border-radius: 10px;
 
     }
 }
@@ -192,11 +192,11 @@ body {
 
     body {
         background-image: url("../../img/Fundo2.jpeg");
-        /* background-size: 100%; */
+        background-size: 100%;
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-reapeat;
-        font-family: "Indie Flower", cursive, Permanente, sans-serif;
+        font-family: "Indie Flower",;
         display: flex;
         justify-content: center;
         align-items: center;
