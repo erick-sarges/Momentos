@@ -200,7 +200,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        /* height: 100vh; */
+        height: 100vh;
         margin-top: 20px;
         background-color: #c7cdd3;
         flex-wrap: wrap;
