@@ -192,15 +192,15 @@ body {
 
     body {
         background-image: url("../../img/Fundo2.jpeg");
-        background-size: 100%;
-        background-attachment: fixed;
+        background-size:cover;
+        background-attachment:fixed;
         background-position: center;
-        background-repeat: no-reapeat;
+        background-repeat: no-repeat;
         font-family: "Indie Flower",;
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        /* height: 100vh; */
         margin-top: 20px;
         background-color: #c7cdd3;
         flex-wrap: wrap;
