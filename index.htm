@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./assets/CSS/style.css" type="text/css">
+    <link rel="icon" href="./img/icons8-mensagem-de-amor.png" type="image/jpg">
+    <title>Momentos</title>
+</head>
+
+<body>
+    <div id="musica">
+        <audio controls autoplay loop preload="metadata">
+            <source src="./music/Tudo Que Você Quiser - Luan Santana.mp3" type="audio/mpeg">
+            <source src="./music/Beija Flor 2018 Letra e Samba - Leo Fernandes (youtube).ogg" type="audio/ogg">
+        </audio>
+
+        <audio src="./music/Beija Flor 2018 Letra e Samba - Leo Fernandes (youtube).opus"></audio>
+        <audio src="./music/Beija Flor 2018 Letra e Samba - Leo Fernandes (youtube).wav"></audio>
+    </div>
+
+    <div id="gameBoard">
+        <div id="father" class="card" data-icon="bootstrap">
+
+            <div class="card-front">
+                <!-- <img class="icon" src="./assets/images/bootstrap.png"> -->
+
+            </div>
+
+            <div class="card-back">
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div id="gameOver">
+        <div>
+            <h6>Isso foi apenas um pequeno gesto de carinho para fazer você sentir o quanto valorizo cada segundo que vivemos juntos. Quero multiplicar nossos encontros, nossos silêncios cúmplices e os momentos únicos que ainda nos esperam. Dia após dia, amo você com mais força, mais verdade e mais entrega. Quero você hoje, amanhã e em todos os dias que vierem, meu amor. Te amo<span id="cor">&#10084</span>.</h6>
+        </div>
+        <button id="restart" onclick="restart()">Jogar Novamente</button>
+    </div>
+
+    <script src="./assets/Scripts/game.js"></script>
+    <script src="./assets/Scripts/interface.js"></script>
+</body>
+
+</html>

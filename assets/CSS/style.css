@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+
+body {
+    background-image: url("../../img/Fundo2.jpeg");
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: "Indie Flower", cursive, Permanente, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 20px;
+    background-color: #c7cdd3;
+    flex-wrap: wrap;
+
+}
+
+#musica {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 20px;
+    justify-content: center;
+
+
+}
+
+@font-face {
+    font-family: "Indie Flower", cursive, sans-serif, Permanente;
+    src: url("../../fonts/PermanentMarker-Regular.ttf");
+}
+
+
+@font-face {
+    font-family: sans-serif, Itim;
+    src: url("../../fonts/Itim-Regular.ttf");
+}
+
+.card {
+
+    width: 110px;
+    height: 110px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform .5s;
+
+}
+
+.card-back,
+.card-front {
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px #00000073;
+    backface-visibility: hidden;
+
+}
+
+.flip {
+
+    transform: rotateY(180deg);
+}
+
+.card-front {
+
+    transform: rotateY(180deg);
+    background-color: 	#1B1B1B;
+
+}
+
+
+.card-back {
+
+    background-color: #FF2C2CEE;
+    font-size: 30px;
+    color: #101c2c;
+}
+
+#gameOver {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000000e6;
+    color: #ffffff;
+    font-size: 25px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 0;
+}
+
+#cor{
+    color: #FF2C2CEE;
+}
+
+#restart {
+    padding: 20px;
+    font-size: 20px;
+    font-family: "Indie Flower", cursive, Permanente, sans-serif;
+    background-color: #FF2C2CEE;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 2px 5px #ffffff;
+    margin-top: 10px;
+
+}
+
+#gameBoard {
+    display: grid;
+    max-width: 700px;
+    grid-template: 1fr 1fr 1fr 1fr 1fr/ 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+@media screen and (max-width: 600px) {
+
+    #gameBoard {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        padding: 10px;
+        /* background-color: #000000; */
+        /* transform: translateX(-10px); */
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .card-back,
+    .card-front {
+
+        width: 96%;
+        height: 96%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    #restart {
+        padding: 20px;
+        font-size: 20px;
+        background-color:#FF2C2CEE;
+        border: none;
+        border-radius: 20px;
+        box-shadow: 0px 2px 5px #ffffff;
+        margin-top: 10px;
+
+
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    #gameOver {
+
+
+        background-color: #000000e6;
+        color: #ffffff;
+        font-size: 30px;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    body {
+        background-image: url("../../img/Fundo2.jpeg");
+        /* background-size: 100%; */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-reapeat;
+        font-family: "Indie Flower", cursive, Permanente, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin-top: 20px;
+        background-color: #c7cdd3;
+        flex-wrap: wrap;
+
+    }
+}
